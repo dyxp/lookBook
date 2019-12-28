@@ -1,0 +1,88 @@
+/* pages/bookshelf/bookshelf.wxss */
+
+page {
+  background-color: #21272e;
+  color: #9da3b4;
+}
+
+.head {
+  width: 650rpx;
+  margin: 0 auto;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: relative;
+}
+
+.head-word {
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.head-img {
+  position: absolute;
+  width: 34rpx;
+  height: 34rpx;
+  right: 0rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrap{
+   border-bottom: 1rpx solid #2f343c;
+   margin-bottom: 40rpx;
+}
+
+.wrapper-title {
+  width: 650rpx;
+  margin: 0 auto 50rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+
+.title-rank {
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.new-books-out {
+  width: 650rpx;
+  margin: 0 auto;
+}
+
+.new-books {
+  font-size: 0;
+  width: 690rpx;
+}
+
+.books {
+  display: inline-block;
+  width: 190rpx;
+  margin-right: 40rpx;
+}
+
+.books-image {
+  width: 190rpx;
+  height: 300rpx;
+  margin-bottom: 40rpx;
+}
+
+.books-word {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+  word-wrap: nowrap;
+}
+
+.books-writer {
+  font-size: 26rpx;
+  margin-bottom: 90rpx;
+   width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

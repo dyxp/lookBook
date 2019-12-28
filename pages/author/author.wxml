@@ -1,0 +1,51 @@
+<!--pages/author/author.wxml-->
+<view class="person">
+  <view class="person-left">
+    <image class="person-img" src="{{author.touxiang}}"></image>
+  </view>
+  <view class="person-right">
+    <view class="person-name">{{author.name}}</view>
+    <view class="person-area">{{author.country}}.{{author.city}}</view>
+    <view class="share-out">
+      <view class="share">
+        <image class="share-img" src="/images/linkto.png"></image>
+        <text class="share-word">分享</text>
+      </view>
+      <view class="share share-color">
+        <text>+关注</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="options">
+  <view class="option option-actice">
+    <view>{{author.guanz}} </view>
+    <view class="focus">关注</view>
+  </view>
+  <view class="option option-actice">
+    <view>{{author.fens}} </view>
+    <view class="focus">粉丝</view>
+  </view>
+  <view class="option">
+    <view>{{author.likes}}</view>
+    <view class="focus">喜欢</view>
+  </view>
+</view>
+
+
+<view class="book" wx:for="{{currentbooks}}" wx:key="index">
+  <view class="book-list clearfix">
+    <view class="book-list-left">
+      <image class="book-list-img" src="{{item.touxiang}}"></image>
+    </view>
+    <view class="book-list-right">
+      <view class="book-list-name"> {{item.bookname}}</view>
+      <view class="book-list-author">作者：{{item.writername}}</view>
+      <view class="book-list-introduce">{{item.about}}</view>
+      <view class="book-list-grade">
+        <image class="star" wx:for="{{item.star}}" wx:key="index" src="/images/star.png"></image>
+        <text class="grade">{{item.star}}.0</text>
+      </view>
+    </view>
+  </view>
+</view>

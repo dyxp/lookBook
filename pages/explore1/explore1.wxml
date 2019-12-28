@@ -1,0 +1,11 @@
+<!--pages/explore/explore.wxml-->
+<view class="head">
+  <text class="head-word">探索</text>
+  <image class="head-img" src="/images/explore1.png"></image>
+  <image class="head-img1" src="/images/explore2.png"></image>
+</view>
+<view class="expolre-index">
+  <image class="expolre-index-img" src="{{arr.touxiang}}"></image>
+  <view class="expolre-index-name">{{arr.bookname}}</view>
+  <view class="expolre-index-writer">{{arr.writername}}</view>
+</view>

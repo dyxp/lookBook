@@ -1,0 +1,88 @@
+<!--pages/bookdetail/bookdetail.wxml-->
+<view class="book">
+  <view class="book-list clearfix">
+    <view class="book-list-left">
+      <image class="book-list-img" src="{{book.touxiang}}"></image>
+    </view>
+    <view class="book-list-right">
+      <view class="book-list-name"> {{book.bookname}}</view>
+      <view class="book-list-author">作者：{{book.writername}}</view>
+      <view class="book-list-introduce">{{book.about}}</view>
+      <view class="book-list-grade">
+        <image class="star" wx:for="{{starNum}}" wx:key="index" src="/images/star.png"></image>
+        <text class="grade">{{starNum}}.0</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="option">
+  <view class="option-center">
+    <view data-num="{{index}}" bindtap="changered" wx:for="{{options}}" wx:key="index">
+      <image class="option-img" src="{{item.path}}"></image>
+      <text class="option-word">{{item.word}}</text>
+    </view>
+  </view>
+  <image class="option-show" wx:if="{{black}}" src="/images/redheart.png"></image>
+</view>
+<view class="option">
+  <view class="option-detail look-detail">详情</view>
+  <view class="option-introduce">{{book.about}}</view>
+</view>
+<view class="option option-list">
+  <view class="option-detail">查看目录</view>
+  <view class="option-arrow">></view>
+</view>
+<view class="option">
+  <view class="option-list">
+    <view class="option-detail">
+      评论
+      <text class="list-num">{{listnum}}条评论</text>
+    </view>
+    <view>
+      <image class="write" src="/images/pl.png"></image>
+    </view>
+  </view>
+  <view class="discuss">
+    <view>
+      <image class="discuss-img" src="/images/discuss-head.png"></image>
+    </view>
+    <view class="discuss-right">
+      <view class="discuss-head">你个废物</view>
+      <view class="discuss-detail">大刘塑造的女性都具有明显的圣母特质，但是本质上弱爆了。叶是文革的毒瘤，庄是定制禁脔，程最经典——站在圣母和傻逼的微笑曲线上。大刘塑造的男性都带有明显的缺陷但本质上极端人性化。-身痞气的小人物大史，最高情商让他活得最明白;罗辑的荒唐和不羁让他成了救世主，但也决定了他必不能善终;软弱怯懦固执的云天明，也并无理由因为慷慨和运气就得到爱啊。但我真心理解这样的人，这样的性格，这样的命运。</view>
+      <view class="discuss-information">
+        <view class="discuss-date">12-04 21:20</view>
+        <view class="discuss-option-list">
+          <view class="relative" data-num="0" bindtap="changered">
+            <image class="discuss-option" src="/images/blackheart.png"></image>
+            <text class="discuss-num">134</text>
+            <image class="discuss-red" wx:if="{{black}}" src="/images/redheart.png"></image>
+          </view>
+          <image class="discuss-option" src="/images/thetk.png"></image>
+          <text class="discuss-num">89</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 试看 -->
+<view class="look-buy">
+  <view class="look-buy-center">
+    <text class="look">试看</text>
+    <text class="buy" bindtap="buy">购买</text>
+  </view>
+</view>
+<!-- 分享 -->
+<view class="share" wx:if="{{shareShow}}">
+  <view class="share-body">
+    <view wx:for="{{shareImage}}" wx:key="index">
+      <image class="share-area" src="{{item}}"></image>
+    </view>
+  </view>
+  <image bindtap="close" class="close" src="/images/close.png"></image>
+</view>
+<!-- 放入书架 -->
+<view class="put-bookshelf"  wx:if="{{bookshelf}}">
+  <image class="put-img" src="{{book.touxiang}}"></image>
+  <view class="put-success">已经将这本书加入到个人书架</view>
+  <view bindtap="bookshelfok" class="ok">好的</view>
+</view>

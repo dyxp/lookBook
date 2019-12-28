@@ -1,0 +1,49 @@
+<!--pages/mimenews/mimenews.wxml-->
+<view class="manager">
+  <view class="manager-body">
+    <view>查看账户</view>
+    <view>></view>
+  </view>
+
+</view>
+<view class="manager">
+  <view class="manager-body">
+    <view>个人账号</view>
+    <view>></view>
+  </view>
+
+</view>
+<view class="manager">
+  <view class="manager-body">
+    <view>消息提醒</view>
+    <view>
+    <switch color="#fb6894" type="switch"></switch>
+    </view>
+  </view>
+</view>
+<view class="manager">
+  <view class="manager-body">
+    <view>清理缓存</view>
+    <view>
+       <text class="size">{{dataSize}}</text>
+      <text>></text>
+    </view>
+  </view>
+</view>
+<view class="manager">
+  <view class="manager-body">
+    <view>帮助中心</view>
+    <view>
+      <text>{{person[0].moneys}}</text>
+      <text>></text>
+    </view>
+  </view>
+</view>
+<view class="manager">
+  <view class="manager-body">
+    <view>关于我们</view>
+    <view>></view>
+  </view>
+</view>
+<view class="exit">退出登陆</view>
+

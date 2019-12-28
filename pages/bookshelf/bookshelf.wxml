@@ -1,0 +1,35 @@
+<!--pages/bookshelf/bookshelf.wxml-->
+<view class="head">
+  <text class="head-word">书架</text>
+  <image class="head-img" src="/images/list.png"></image>
+</view>
+<view class="wrap">
+  <view class="wrapper-title">
+    <text class="title-rank">正在阅读</text>
+    <text>查看全部 ></text>
+  </view>
+  <view class="new-books-out">
+    <view class="new-books">
+      <view class="books" data-num="{{index}}" bindtap="bookDetail" wx:for="{{book1}}" wx:key="index">
+        <image class="books-image" src="{{item.touxiang}}"></image>
+        <view class="books-word">{{item.bookname}}</view>
+        <view class="books-writer">{{item.writername}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+  <view class="wrapper-title">
+    <text class="title-rank">未读</text>
+    <text>查看全部 ></text>
+  </view>
+  <view class="new-books-out">
+    <view class="new-books">
+      <view class="books" data-num="{{index}}" bindtap="bookDetail1" wx:for="{{book2}}" wx:key="index">
+        <image class="books-image" src="{{item.touxiang}}"></image>
+        <view class="books-word">{{item.bookname}}</view>
+        <view class="books-writer">{{item.writername}}</view>
+      </view>
+    </view>
+  </view>
+</view>

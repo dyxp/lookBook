@@ -1,0 +1,9 @@
+<!--pages/balance/balance.wxml-->
+<view class="title">账户余额</view>
+<view class="balance">
+  <view class="balance-word">我的余额(元)</view>
+  <view class="balance-money">{{men[0].moneys}}.00</view>
+
+</view>
+
+<view bindtap="charge" class="charge">充值</view>

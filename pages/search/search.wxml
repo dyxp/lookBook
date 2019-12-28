@@ -1,0 +1,28 @@
+<!--pages/search/search.wxml-->
+<view class="search-head">
+  <view class="head" bindtap="search">
+    <image class="head-img" src="/images/search.png"></image>
+    <input auto-focus="ture" placeholder-class="head-input-placeholder" class="head-input" placeholder="搜索..."></input>
+  </view>
+  <view class="cancel">取消</view>
+</view>
+
+<view class="new-book">
+  <view class="wrapper-title">
+    <text class="title-rank">新发布</text>
+    <text>查看全部 ></text>
+  </view>
+  <view class="new-books-out">
+    <view class="new-books">
+      <view class="books" data-num="{{index}}" bindtap="bookDetail" wx:for="{{books}}" wx:key="index">
+        <image class="books-image" src="{{item.touxiang}}"></image>
+        <view class="books-word">{{item.bookname}}</view>
+        <view class="books-writer">{{item.writername}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="heads">
+  <text class="head-words">搜索历史</text>
+  <image class="head-imgs" src="/images/history.png"></image>
+</view>

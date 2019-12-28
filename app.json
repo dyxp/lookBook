@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookdetail/bookdetail",
+    "pages/search/search",
+    "pages/discussdetail/discussdetail",
+    "pages/explore/explore",
+    "pages/explore1/explore1",
+    "pages/bookshelf/bookshelf",
+    "pages/mime/mime",
+    "pages/mimenews/mimenews",
+    "pages/shop/shop",
+    "pages/class/class",
+    "pages/classAll/classAll",
+    "pages/balance/balance",
+    "pages/recharge/recharge",
+    "pages/authorAll/authorAll",
+    "pages/author/author"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#21272e",
+    "navigationBarTitleText": "book",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "position": "bottom",
+    "backgroundColor": "#2a313a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/1active.png"
+      },
+      {
+        "pagePath": "pages/explore/explore",
+        "iconPath": "images/2.png",
+        "selectedIconPath": "images/2active.png"
+      },
+      {
+        "pagePath": "pages/bookshelf/bookshelf",
+        "iconPath": "images/3.png",
+        "selectedIconPath": "images/3active.png"
+      },
+      {
+        "pagePath": "pages/mime/mime",
+        "iconPath": "images/4.png",
+        "selectedIconPath": "images/4active.png"
+      }
+    ]
+  }
+}

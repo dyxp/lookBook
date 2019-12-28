@@ -1,0 +1,16 @@
+<!--pages/class/class.wxml-->
+<view class="head">
+  <text class="head-word">{{currentclass}}</text>
+  <image class="head-img" src="/images/list.png"></image>
+</view>
+<view class="book-list clearfix" wx:for="{{books}}" wx:key="index">
+  <view class="book-list-left">
+    <image class="book-list-img" src="{{item.touxiang}}"></image>
+  </view>
+  <view class="book-list-right">
+    <view class="book-list-name"> {{item.bookname}}</view>
+    <view class="book-list-author">作者：{{item.writername}}</view>
+    <view class="book-list-introduce">{{item.about}}</view>
+    <text class="ellipsi">...</text>
+  </view>
+</view>

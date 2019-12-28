@@ -1,0 +1,62 @@
+<!--pages/mime/mime.wxml-->
+<view class="head">
+  <text class="head-word">我的</text>
+  <image bindtap="mimenews" class="head-img" src="/images/clun.png"></image>
+</view>
+<view class="person">
+  <view class="person-left">
+    <image class="person-img" src="{{person[0].touxiang}}"></image>
+  </view>
+  <view class="person-right">
+    <view class="person-name">{{person[0].name}}</view>
+    <view class="person-area">{{person[0].country}}.{{person[0].city}}</view>
+    <view class="share">
+      <image class="share-img" src="/images/linkto.png"></image>
+      <text class="share-word">分享</text>
+    </view>
+  </view>
+</view>
+<view class="options">
+  <view class="option option-actice">
+    <view>{{person[0].guanz}} </view>
+    <view  class="focus">关注</view>
+  </view>
+  <view class="option option-actice">
+    <view>{{person[0].fens}} </view>
+    <view  class="focus">粉丝</view>
+  </view>
+  <view class="option">
+    <view>{{person[0].likes}}</view>
+    <view  class="focus">喜欢</view>
+  </view>
+</view>
+
+<view class="manager">
+  <view class="manager-body">
+    <view>个人信息</view>
+    <view>></view>
+  </view>
+
+</view>
+<view class="manager">
+  <view class="manager-body">
+    <view>我的消息</view>
+    <view class="message">6</view>
+  </view>
+
+</view>
+<view class="manager" bindtap="balance">
+  <view class="manager-body">
+    <view>账户余额</view>
+    <view>
+      <text class="money">{{person[0].moneys}}.00</text>
+      <text>></text>
+    </view>
+  </view>
+</view>
+<view class="manager">
+  <view class="manager-body">
+    <view>我的评论</view>
+    <view>></view>
+  </view>
+</view>

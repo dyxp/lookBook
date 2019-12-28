@@ -1,0 +1,64 @@
+/* pages/explore/explore.wxss */
+
+page {
+  background-color: #282828;
+  color: #9da3b4;
+}
+
+.head {
+  width: 650rpx;
+  margin: 0 auto;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: relative;
+}
+
+.head-word {
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.head-img {
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  right: 50rpx;
+  top: 50%;
+  transform: translateY(-48%);
+}
+
+.head-img1 {
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  right: 0rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.expolre-index {
+  width: 390rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.expolre-index-img {
+  width: 390rpx;
+  height: 560rpx;
+  display: inline-block;
+  margin-top: 80rpx;
+  margin-bottom: 80rpx;
+}
+
+.expolre-index-name {
+  color: #fff;
+  font-size: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.expolre-index-writer {
+  font-size: 32rpx;
+  padding-bottom: 80rpx;
+  border-bottom: 2rpx solid #2f343c;
+}

@@ -1,0 +1,28 @@
+<!--pages/shop/shop.wxml-->
+<view class="head">
+  <text class="head-word">购物车</text>
+</view>
+<view class="book-list clearfix" wx:for="{{books}}" wx:key="index">
+  <view class="book-list-left">
+    <image class="book-list-img" src="{{item.touxiang}}"></image>
+  </view>
+  <view class="book-list-right">
+    <view class="book-list-name"> {{item.bookname}}</view>
+    <view class="book-list-author">作者：{{item.writername}}</view>
+    <view class="book-list-introduce">￥{{item.money}}</view>
+    <text class="ellipsi">...</text>
+  </view>
+</view>
+<view class="bottom">
+  <view class="bottom-top">
+    <view>
+      <text>总计(元)</text>
+      <text class="money">{{moneyAll}}.00</text>
+    </view>
+    <view>
+      <text>余额(元)</text>
+      <text class="money">1375.00</text>
+    </view>
+  </view>
+  <view class="charge">购买</view>
+</view>

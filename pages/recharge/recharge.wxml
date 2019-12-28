@@ -1,0 +1,32 @@
+<!--pages/recharge/recharge.wxml-->
+<view class="title">充值</view>
+<view class="balance">
+  <view class="balance-word">充值余额(元)</view>
+  <view class="balance-money">
+    <text>￥</text>
+    <input auto-focus="true" bindinput="values" class="money-input"></input>
+  </view>
+</view>
+
+<view bindtap="charge" class="charge">下一步</view>
+<view class="payment" wx:if="{{show}}">
+  <view class="payment-body">
+    <image bindtap="finallys" class="put-img" src="/images/close.png"></image>
+    <view class="payment-word">确认付款(元)</view>
+    <view class="payment-money">{{val}}.00</view>
+    <view class="payment-message">
+      <view>订单信息</view>
+      <view class="pay">充值</view>
+    </view>
+    <view class="payment-message">
+      <view>付款方式</view>
+      <view class="card">中国银行卡(3333)></view>
+    </view>
+    <view class="pasword">
+      <image class="zw" src="/images/zw.png"></image>
+      <text class="finger">指纹验证或</text>
+      <text class="pwd">输入密码</text>
+    </view>
+
+  </view>
+</view>

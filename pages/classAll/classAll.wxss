@@ -1,0 +1,125 @@
+/* pages/allfenlei/allfenlei.wxss */
+
+page {
+  background-color: #282828;
+  /* color: #9da3b4; */
+}
+
+.head {
+  width: 750rpx;
+  height: 100rpx;
+  position: relative;
+  background-color: #282828;
+  margin-top: 40rpx;
+}
+
+.head-img {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 60rpx;
+  top: 30rpx;
+}
+
+.head-input {
+  padding-left: 80rpx;
+  border-radius: 20px;
+  width: 600rpx;
+  height: 100rpx;
+  color: #9da3b4;
+  margin: 0 auto;
+  background: #2b323b;
+}
+
+.head-input-placeholder {
+  font-size: 30rpx;
+  color: #9da3b4;
+}
+
+.class {
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.theswipt1 {
+  margin-top: 70rpx;
+  margin-left: 45rpx;
+}
+
+.thescroll {
+  white-space: nowrap;
+}
+
+.theswipts-view {
+  text-align: center;
+  width: 135rpx;
+  padding-bottom: 35rpx;
+  display: inline-block;
+  color: #fff;
+}
+
+.thelines {
+  width: 100%;
+  height: 1px;
+  background-color: #2d353d;
+}
+
+.activeclass {
+  border-bottom: 1px solid #fb6894;
+}
+
+.view-fenlei {
+  height: 120rpx;
+  width: 660rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.view-fenlei-text1 {
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.view-fenlei-text2 {
+  color: #9da3b4;
+  font-size: 26rpx;
+}
+
+.aboutbooks {
+  margin-left: 45rpx;
+  margin-bottom: 20rpx;
+}
+
+.aboutbooks-content {
+  width: 660rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.realy-con {
+  height: 490rpx;
+  width: 190rpx;
+}
+
+.realy-con-image {
+  width: 190rpx;
+  height: 300rpx;
+}
+
+.realy-text1 {
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.realy-text2 {
+  color: #5d637c;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}

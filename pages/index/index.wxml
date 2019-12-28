@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="index-head">
+  <view>
+    <image class="index-head-img" src="/images/shenbei.png"></image>
+  </view>
+  <view>
+    <image class="index-head-img" src="/images/list.png"></image>
+  </view>
+</view>
+<view class="head" bindtap="search">
+  <image class="head-img" src="/images/search.png"></image>
+  <input placeholder-class="head-input-placeholder" class="head-input" placeholder="搜索..."></input>
+</view>
+
+<view class="wrapper">
+  <view class="wrapper-title">
+    <text class="title-rank">分类排行</text>
+    <text bindtap="calssAll">查看全部 ></text>
+  </view>
+  <scroll-view class="wrapper-tx" scroll-x="true">
+    <view bindtap="lookBookclass" data-class="{{item.type}}" class="touxiang" wx:for="{{arr}}" wx:key="index">
+      <image class="touxiang-image" src="{{item.touxiang}}"></image>
+      <view class="touxiang-word">{{item.type}}</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="wrapper">
+  <view class="wrapper-title">
+    <text class="title-rank">作者排行</text>
+    <text bindtap="authorAll">查看全部 ></text>
+  </view>
+  <scroll-view class="wrapper-tx" scroll-x="true">
+    <view data-name="{{item.name}}" class="touxiang" wx:for="{{article}}" wx:key="index" bindtap="author">
+      <image class="touxiang-image" src="{{item.touxiang}}"></image>
+      <view class="touxiang-word">{{item.name}}</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="new-book">
+  <view class="wrapper-title">
+    <text class="title-rank">新发布</text>
+    <text>查看全部 ></text>
+  </view>
+  <view class="new-books-out">
+    <view class="new-books">
+      <view class="books" data-num="{{index}}" bindtap="bookDetail" wx:for="{{books}}" wx:key="index">
+        <image class="books-image" src="{{item.touxiang}}"></image>
+        <view class="books-word">{{item.bookname}}</view>
+        <view class="books-writer">{{item.writername}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class="hot-search">
+  <view class="hot-search-title">热门搜索</view>
+  <view wx:key="index" style="color:{{colors[index]}};border-color:{{colors[index]}};" class="hot-search-little" wx:for="{{hotSearch}}">{{item.title}}</view>
+</view>
+
+<view class="wrapper">
+  <view class="wrapper-title">
+    <text class="title-rank">热销榜</text>
+    <text>查看全部 ></text>
+  </view>
+  <scroll-view class="wrapper-tx" scroll-x="true">
+    <view class="book-list" wx:for="{{books}}" wx:key="index">
+      <view class="book-list-left">
+        <image class="book-list-img" src="{{item.touxiang}}"></image>
+      </view>
+      <view class="book-list-right">
+        <view class="book-list-name"> {{item.bookname}}</view>
+        <view class="book-list-author">作者：{{item.writername}}</view>
+        <view class="book-list-introduce">{{item.about}}</view>
+        <text class="ellipsi">...</text>
+      </view>
+    </view>
+
+  </scroll-view>
+</view>

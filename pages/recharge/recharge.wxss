@@ -1,0 +1,125 @@
+/* pages/recharge/recharge.wxss */
+
+page {
+  background-color: #21272e;
+  color: #fff;
+}
+
+.charge {
+  width: 750rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  position: fixed;
+  bottom: 40rpx;
+  left: 0;
+  text-align: center;
+  background-color: #2e363f;
+}
+
+.title {
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 80rpx;
+  color: #fff;
+  font-size: 28rpx;
+}
+
+.balance {
+  width: 650rpx;
+  height: 320rpx;
+  background-color: #2b323b;
+  border-radius: 20rpx;
+  margin: 0 auto;
+}
+
+.balance-word {
+  color: #75808d;
+  padding-top: 60rpx;
+  padding-left: 50rpx;
+  padding-bottom: 40rpx;
+}
+
+.balance-money {
+  font-size: 80rpx;
+  color: #fff;
+  padding-left: 54rpx;
+  padding-bottom: 60rpx;
+  display: flex;
+}
+
+.money-input {
+  display: inline-block;
+  width: 420rpx;
+  height: 120rpx;
+  margin-left: 20rpx;
+}
+
+.payment {
+  width: 750rpx;
+  height: 800rpx;
+  position: fixed;
+  bottom: 20rpx;
+  left: 0;
+  background-color: #2e363f;
+}
+
+.payment-body {
+  width: 650rpx;
+  margin: 0 auto;
+  position: relative;
+}
+
+.zw {
+  width: 90rpx;
+  height: 90rpx;
+  position: relative;
+  top: 35rpx;
+}
+
+.payment-message {
+  display: flex;
+  justify-content: space-between;
+  height: 140rpx;
+  line-height: 140rpx;
+  border-bottom: 1rpx solid #333c47;
+}
+
+.payment-word {
+  color: #75808d;
+  padding-top: 80rpx;
+  padding-bottom: 40rpx;
+}
+
+.payment-money {
+  font-size: 80rpx;
+  color: #fff;
+  padding-bottom: 40rpx;
+}
+
+.pay, .card {
+  color: #636c77;
+}
+
+.pasword {
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+}
+
+.finger {
+  color: #636c77;
+  margin-left: 20rpx;
+}
+
+.pwd {
+  color: #fb6894;
+  margin-left: 20rpx;
+}
+
+.put-img {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 40rpx;
+  right: 0rpx;
+}

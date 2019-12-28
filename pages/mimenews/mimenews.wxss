@@ -1,0 +1,35 @@
+/* pages/mimenews/mimenews.wxss */
+
+page {
+  background-color: #21272e;
+  color: #dcdeea;
+}
+
+.manager {
+  margin-left: 50rpx;
+  border-bottom: 1px solid #333c47;
+}
+
+.manager-body {
+  height: 140rpx;
+  width: 650rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.size{
+  font-size: 24rpx;
+  margin-right: 30rpx;
+}
+
+.exit{
+  width: 750rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  position: fixed;
+  bottom:40rpx;
+  left: 0;
+  color: #dcdeea;
+  text-align: center;
+  background-color: #2e363f;
+}

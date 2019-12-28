@@ -1,0 +1,40 @@
+<!--pages/allfenlei/allfenlei.wxml-->
+<view class="class">分类</view>
+<view class="head" bindtap="search">
+  <image class="head-img" src="/images/search.png"></image>
+  <input placeholder-class="head-input-placeholder" class="head-input" placeholder="搜索..."></input>
+</view>
+<view class="theswipt1">
+  <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
+    <view bindtap="changeactive" data-num="{{ index }}" class="theswipts-view {{ theactive == index ?'activeclass':''}}" wx:for="{{ classList }}" wx:key="index">
+      <view>{{ item.type }}</view>
+    </view>
+  </scroll-view>
+</view>
+<view class="thelines"></view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">新上架</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="aboutbooks">
+  <view class="aboutbooks-content">
+    <view class="realy-con" wx:for="{{ bookslist }}" wx:key="index" wx:if="{{index<3}}">
+      <image class="realy-con-image" src="{{ item.touxiang }}"></image>
+      <view class="realy-text1">{{ item.bookname }}</view>
+      <view class="realy-text2">{{ item.writername }}</view>
+    </view>
+  </view>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">热门</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="aboutbooks">
+  <view class="aboutbooks-content">
+    <view class="realy-con" wx:for="{{ bookslist }}" wx:key="index" wx:if="{{index>3}}">
+      <image class="realy-con-image" src="{{ item.touxiang }}"></image>
+      <view class="realy-text1">{{ item.bookname }}</view>
+      <view class="realy-text2">{{ item.writername }}</view>
+    </view>
+  </view>
+</view>

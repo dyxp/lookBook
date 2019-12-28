@@ -1,0 +1,45 @@
+<!--pages/authorAll/authorAll.wxml-->
+<view>
+<view></view>
+<view></view>
+<view></view>
+</view>
+<view class="wrapper">
+  <view class="wrapper-title">
+    <text class="title-rank">热门作者</text>
+    <text>查看全部 ></text>
+  </view>
+  <scroll-view class="wrapper-tx" scroll-x="true">
+    <view class="touxiang" wx:for="{{article}}" wx:key="index" bindtap="author">
+      <image class="touxiang-image" src="{{item.touxiang}}"></image>
+      <view class="touxiang-word">{{item.name}}</view>
+      <view class="seekFocus">+关注</view>
+    </view>
+  </scroll-view>
+</view>
+<view class="wrapper">
+  <view class="wrapper-title">
+    <text class="title-rank">新晋作者</text>
+    <text>查看全部 ></text>
+  </view>
+  <scroll-view class="wrapper-tx" scroll-x="true">
+    <view class="touxiang" wx:for="{{article}}" wx:key="index" bindtap="author">
+      <image class="touxiang-image" src="{{item.touxiang}}"></image>
+      <view class="touxiang-word">{{item.name}}</view>
+      <view class="alreadyFocus">已关注</view>
+    </view>
+  </scroll-view>
+</view>
+<view class="wrapper">
+  <view class="wrapper-title">
+    <text class="title-rank">其他作者</text>
+    <text>查看全部 ></text>
+  </view>
+  <scroll-view class="wrapper-tx" scroll-x="true">
+    <view class="touxiang" wx:for="{{article}}" wx:key="index" bindtap="author">
+      <image class="touxiang-image" src="{{item.touxiang}}"></image>
+      <view class="touxiang-word">{{item.name}}</view>
+      <view class="alreadyFocus">已关注</view>
+    </view>
+  </scroll-view>
+</view>

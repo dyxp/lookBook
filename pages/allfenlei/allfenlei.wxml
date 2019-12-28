@@ -1,0 +1,42 @@
+<!--pages/allfenlei/allfenlei.wxml-->
+<view class="thefenleitop">分类</view>
+<view class="thefenlei-ser">
+  <view class="thesercontent">
+    <image class="thesericon" src="../../images/sericon.png"></image>
+    <input class="theserinput" placeholder="搜索..."></input>
+  </view>
+</view>
+<view class="theswipt1">
+  <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
+    <view bindtap="changeactive" data-num="{{ index }}" class="theswipts-view {{ theactive == index ?'activeclass':''}}" wx:for="{{ thefenleilist }}" wx:key="index">
+      <view>{{ item.type }}</view>
+    </view>
+  </scroll-view>
+</view>
+<view class="thelines"></view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">新上架</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="aboutbooks">
+  <view class="aboutbooks-content">
+    <navigator url="../indexbook/indexbook?thebook={{ item.id }}" class="realy-con" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index<3}}">
+      <image class="realy-con-image" src="{{ item.touxiang }}"></image>
+      <view class="realy-text1">{{ item.bookname }}</view>
+      <view class="realy-text2">{{ item.writername }}</view>
+    </navigator>
+  </view>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">热门</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="aboutbooks">
+  <view class="aboutbooks-content">
+    <navigator url="../indexbook/indexbook?thebook={{ item.id }}" class="realy-con" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index>3}}">
+      <image class="realy-con-image" src="{{ item.touxiang }}"></image>
+      <view class="realy-text1">{{ item.bookname }}</view>
+      <view class="realy-text2">{{ item.writername }}</view>
+    </navigator>
+  </view>
+</view>

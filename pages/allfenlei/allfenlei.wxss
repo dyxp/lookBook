@@ -1,0 +1,109 @@
+/* pages/allfenlei/allfenlei.wxss */
+.thefenleitop
+{
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 40rpx;
+  color: #fff;
+}
+.thefenlei-ser
+{
+  width: 660rpx;
+  margin: 0 auto;
+}
+.thesercontent
+{
+  height: 100rpx;
+  width: 100%;
+  background-color: #2d353d;
+  border-radius: 50rpx;
+  display: flex;
+  align-items: center;
+}
+.thesericon
+{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 30rpx;
+}
+.theserinput
+{
+  padding-left: 20rpx;
+}
+.theswipt1 {
+  margin-top: 70rpx;
+  margin-left: 45rpx;
+}
+.thescroll {
+  white-space: nowrap;
+}
+.theswipts-view {
+  text-align: center;
+  width: 135rpx;
+  padding-bottom: 35rpx;
+  display: inline-block;
+  color: #fff;
+}
+.thelines
+{
+  width: 100%;
+  height: 1px;
+  background-color: #2d353d;
+}
+.activeclass
+{
+  border-bottom: 1px solid #fb6894;
+}
+.view-fenlei {
+  height: 120rpx;
+  width: 660rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.view-fenlei-text1 {
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.view-fenlei-text2 {
+  color: #9da3b4;
+  font-size: 26rpx;
+}
+
+
+.aboutbooks {
+  margin-left: 45rpx;
+  margin-bottom: 20rpx;
+}
+
+.aboutbooks-content {
+  width: 660rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.realy-con {
+  height: 490rpx;
+  width: 190rpx;
+}
+
+.realy-con-image {
+  width: 190rpx;
+  height: 300rpx;
+}
+
+.realy-text1 {
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.realy-text2 {
+  color: #5d637c;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}

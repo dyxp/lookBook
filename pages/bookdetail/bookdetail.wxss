@@ -1,0 +1,319 @@
+/* pages/bookdetail/bookdetail.wxss */
+
+page {
+  background-color: #282828;
+  color: #868dab;
+}
+
+.book {
+  margin-left: 50rpx;
+  padding-bottom: 80rpx;
+  padding-top: 80rpx;
+  border-bottom: 2rpx solid #323643;
+}
+
+.book-list {
+  height: 330rpx;
+  border-radius: 40rpx;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+  height: 0;
+  line-height: 0;
+}
+
+.book-list-left {
+  float: left;
+  margin-right: 30rpx;
+}
+
+.book-list-right {
+  float: left;
+  width: 400rpx;
+}
+
+.book-list-img {
+  width: 220rpx;
+  height: 330rpx;
+}
+
+.book-list-name {
+  color: #fff;
+  font-size: 38rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.book-list-author {
+  padding-bottom: 20rpx;
+  color: #5d637c;
+}
+
+.book-list-introduce {
+  width: 380rpx;
+  /* padding-top: 20rpx; */
+  font-size: 26rpx;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.book-list-grade {
+  padding-top: 20rpx;
+}
+
+.star {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 4rpx;
+}
+
+.grade {
+  color: #ffce44;
+  margin-left: 30rpx;
+  font-size: 36rpx;
+}
+
+.option {
+  position: relative;
+  margin-left: 50rpx;
+  border-bottom: 2rpx solid #323643;
+}
+
+.option-center {
+  width: 630rpx;
+  display: flex;
+  height: 130rpx;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+}
+
+.option-img {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 6rpx;
+}
+
+.option-word {
+  color: #fff;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  line-height: 130rpx;
+}
+
+.option-show {
+  position: absolute;
+  left: 0;
+  top: 53rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.option-detail {
+  font-size: 38rpx;
+  color: #fff;
+}
+
+.look-detail {
+  padding-top: 40rpx;
+}
+
+.option-list {
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option-introduce {
+  width: 640rpx;
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  padding-bottom: 60rpx;
+}
+
+.option-arrow {
+  font-size: 40rpx;
+  padding-right: 70rpx;
+}
+
+.write {
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 70rpx;
+}
+
+.list-num {
+  font-size: 28rpx;
+  color: #007aff;
+  padding-left: 20rpx;
+}
+
+.discuss {
+  display: flex;
+  padding-bottom: 200rpx;
+}
+
+.discuss-img {
+  width: 62rpx;
+  height: 62rpx;
+  padding-right: 20rpx;
+}
+
+.discuss-head {
+  color: #fff;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+}
+
+.discuss-detail {
+  font-size: 26rpx;
+  width: 560rpx;
+  padding-bottom: 20rpx;
+}
+
+.discuss-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discuss-information {
+  color: #656a7b;
+  /* position: relative; */
+  font-size: 26rpx;
+}
+
+.discuss-date {
+  color: #656a7b;
+}
+
+.discuss-option {
+  width: 26rpx;
+  height: 20rpx;
+  margin-right: 16rpx;
+}
+
+.discuss-num {
+  margin-right: 30rpx;
+}
+
+.discuss-red {
+  width: 26rpx;
+  height: 24rpx;
+  margin-right: 16rpx;
+  position: absolute;
+  left: 0;
+  top: 7rpx;
+}
+
+.relative {
+  display: inline-block;
+  position: relative;
+}
+
+.look-buy {
+  width: 750rpx;
+  height: 160rpx;
+  background-color: #373a49;
+  color: #fff;
+  position: fixed;
+  padding-top: 40rpx;
+  bottom: 0rpx;
+}
+
+.look-buy-center {
+  width: 650rpx;
+  margin: 0 auto;
+}
+
+.look {
+  background-color: #9295a9;
+  padding: 40rpx 80rpx;
+  border-radius: 60rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+}
+
+.buy {
+  background-color: #fb6894;
+  padding: 40rpx 170rpx;
+  border-radius: 60rpx;
+  display: inline-block;
+}
+
+.share {
+  width: 750rpx;
+  height: 340rpx;
+  background-color: #373a49;
+  position: fixed;
+  bottom: 0rpx;
+}
+
+.share-body {
+  width: 560rpx;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.share-area{
+  width: 90rpx;
+  height: 90rpx;
+  padding-top: 150rpx;
+  padding-bottom: 100rpx;
+}
+
+.close{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 40rpx;
+  right: 60rpx;
+}
+.put-bookshelf{
+  position: absolute;
+  top: 300rpx;
+  left: 100rpx;
+  width: 550rpx;
+  height: 770rpx;
+  background-color: #363947;
+  color: #fff;
+  border-radius: 40rpx;
+  text-align: center;
+}
+.ok{
+  width: 420rpx;
+  text-align: center;
+  background-color: #fb6894;
+  padding: 35rpx 0;
+  border-radius: 80rpx;
+  margin: 0 auto;
+
+}
+.put-img{
+  width: 220rpx;
+  height: 330rpx;
+  margin-top: 80rpx;
+  box-shadow: 0px 0px 150px 5px #000;
+}
+.put-success{
+  width: 334rpx;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50rpx;
+  margin-bottom: 70rpx;
+}
+
+
+
